@@ -64,7 +64,7 @@ function generatePassword() {
 
   //loop scramble password
   for(var i = 0; i < passLeng; i++) {
-    var scrambleIndex = Math.random() * passArray.length;
+    var scrambleIndex = Math.floor(Math.random() * passArray.length);
     //place array elements into password
     passReturn = passReturn + passArray[scrambleIndex];
     console.log(scrambleIndex);
